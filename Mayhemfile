@@ -2,4 +2,4 @@ project: sha3iuf
 target: sha3sum
 
 cmds:
-  - cmd: /repo/sha3sum 512 @@
+  - cmd: /install/bin/sha3sum 512 @@

@@ -3,7 +3,7 @@ CC = c99
 CFLAGS = -std=c99 -Wall -Wextra -Wpedantic -O2 -g
 LDFLAGS =
 LDLIBS =
-PREFIX = /usr/local
+PREFIX = /install
 
 all: libsha3.a sha3sum sha3test
 
