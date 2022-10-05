@@ -6,7 +6,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential
 COPY . /repo
 WORKDIR /repo
 RUN make -j8
-RUN make install
+RUN make install PREFIX=/install
 
 FROM ubuntu:20.04 as package
 COPY --from=builder /install /install
